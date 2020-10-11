@@ -1,4 +1,4 @@
-# ArduPilot Project
+# ArduPilot_RFD_PLANE Project
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ArduPilot/ardupilot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -7,6 +7,15 @@
 [![Coverity Scan Build Status](https://scan.coverity.com/projects/5331/badge.svg)](https://scan.coverity.com/projects/ardupilot-ardupilot)
 
 [![Autotest Status](https://autotest.ardupilot.org/autotest-badge.svg)](https://autotest.ardupilot.org/)
+
+## 写在前面 ##
+本项目修改了原版Ardupilot代码，使用CubeOrange飞控和RFD900x数传电台，支持多架固定翼无人机进行组网。相比于young1717师兄的xbee_plane3.9版本，代码也许会更加简洁和优雅一些，且仅仅修改了ArduPlane的相应代码，ArduCopter和其他代码仍然保持原版不变，使用者可以放心使用 ./waf 命令进行编译。
+如果有任何问题，可以提交Issues或者发送邮件到E-mail地址：tongbingda@buaa.edu.cn与我交流。
+在这里，感谢北航BAFS课题组的各位成员对我的帮助！
+tongbingda 写于2020.10.12凌晨
+
+修改记录：
+2020.10.11 修改固件使得固定翼集群的长僚机可以进行通信。长机可以发送一个自定义的MAVLINK消息包给网络中的其他飞机。
 
 Ardupilot is the most advanced, full-featured and reliable open source autopilot software available. It has
 been under development since 2010 by a team of diverse professional engineers and computer scientists. It is
